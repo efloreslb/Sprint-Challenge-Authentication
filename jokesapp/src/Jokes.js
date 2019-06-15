@@ -20,10 +20,11 @@ class Jokes extends React.Component {
       return (
          <>
             <h3>Jokes</h3>
-
-            {this.state.jokes.map((joke, index) => {
-               return <div key={index}>{joke.joke}</div>
-            })}
+            <ol>
+               {this.state.jokes.map((joke, index) => {
+                  return <li key={index}>{joke.joke}</li>
+               })}
+            </ol>
          </>
       )
    }
